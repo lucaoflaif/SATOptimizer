@@ -110,6 +110,6 @@ Research questions include:
 
 ## Contact  
 
-**Student**: Luca Di Vita
-**Program**: MSc Aerospace Engineering (Final Year)  
+**Student**: Luca Di Vita \
+**Program**: MSc Aerospace Engineering (Final Year)  \
 **Email**: luca.divita@studenti.polito.it
