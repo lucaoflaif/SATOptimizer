@@ -7,7 +7,7 @@ from models import *
 
 rome = Target(n_of_requested_observations=7, 
                         name='rome',
-                        rewards=[0,5,10,15,20,25,30,35,40,45,50])
+                        rewards=[0,5,10,15,20,25,30,35])
 paris = Target(n_of_requested_observations=4, 
                     name='paris',
                     rewards=[0,1,2,3,4])

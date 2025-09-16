@@ -18,6 +18,48 @@ It’s not a full mission planner yet, but the results show that GAs can optimiz
 
 -> I’m aiming to develop this further as part of my **Master’s thesis**. If you’re a researcher, professor, or industry partner interested in this area, I’d love to connect.  
 
+## Usage
+Using this library is as easy as defining the ground targets
+```python
+rome = Target(n_of_requested_observations=7, 
+                        name='rome',
+                        rewards=[0,5,10,15,20,25,30,35])
+paris = Target(n_of_requested_observations=4, 
+                    name='paris',
+                    rewards=[0,1,2,3,4])
+```  
+and the observer(s)
+```python
+candidate_tasks = TasksBuilder.build_candidate_tasks(tasks, dt=5, sorted_by='start_time')
+
+orbit = Orbit(candidate_tasks=candidate_tasks)
+
+satellite = Satellite(
+    orbits=[orbit, ]
+)
+
+opt = Optimizer(
+    satellites=[satellite,]
+)
+```  
+An example output would be someting like
+```bash
+fitness: 361
+sol_idx: 2
+time: 1.171875 s
+==============================
+target: paris; start: 0 s; end: 20 s
+target: paris; start: 20 s; end: 40 s
+target: paris; start: 60 s; end: 80 s
+target: paris; start: 280 s; end: 300 s
+target: rome; start: 455 s; end: 480 s
+target: rome; start: 480 s; end: 505 s
+target: rome; start: 520 s; end: 545 s
+target: rome; start: 555 s; end: 580 s
+target: rome; start: 580 s; end: 605 s
+target: rome; start: 605 s; end: 630 s
+target: rome; start: 640 s; end: 665 s
+``` 
 
 ## Features  
 
