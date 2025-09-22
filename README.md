@@ -12,6 +12,8 @@
 
 ## Overview  
 
+<img src="media/imgs/scheduler.png" width="300" >
+
 This is a **demo prototype** I built in about **4–5 days** to test how **genetic algorithms** could handle scheduling tasks for Low Earth Orbit (LEO) Earth observation satellites.  
 
 It’s not a full mission planner yet, but the results show that GAs can optimize resources (power, storage, comms, imaging windows) and handle complex constraints better than simple heuristics.  
