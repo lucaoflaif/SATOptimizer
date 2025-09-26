@@ -12,6 +12,7 @@
 
 ## Overview  
 
+<img src="media/imgs/scheduler.png" alt="drawing" width="300"/>
 
 This is a **demo prototype** I built in about **4–5 days** to test how **genetic algorithms** could handle scheduling tasks for Low Earth Orbit (LEO) Earth observation satellites.  
 
